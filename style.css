@@ -41,7 +41,7 @@ body{
     margin-left:10px;
     cursor: pointer;
 }
-.header nav .language-btn{
+.language-btn{
     display: inline-flex;
     align-items: center;
     background: transparent;
@@ -66,7 +66,7 @@ body{
     font-weight: 600;
     max-width: 650px;
 }
-.header-content .email-signup{
+.email-signup{
     background: #fff;
     border-radius: 4px;
     display: flex;
@@ -74,13 +74,13 @@ body{
     margin-top:30px;
     overflow:hidden;
 }
-.header-content .email-signup input{
+.email-signup input{
     flex:1;
     border: 0;
     outline: 0;
     margin-left: 20px;
 }
-.header-content .email-signup button{
+.email-signup button{
     background-color: #db0001;
     border: 0;
     outline: 0;
@@ -182,4 +182,48 @@ input[type='radio']{
 }
 .accordian li label:hover{
     background-color: #5a5a66;
+}
+.faq .email-signup{
+    max-width:600px;
+    margin:20px auto 60px;
+}
+/* -----footer----- */
+footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+footer .row{
+    display: flex;
+    /* flex-basis: 25%;
+    flex-grow:1; */
+    padding: 10px 0;
+}
+footer .col{
+    display: block;
+    /* flex-direction: column; */
+    padding: 0px 5vw;
+    margin-bottom: 30px;
+}
+footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+footer .language-btn{
+    color:#fff;
+    padding:10px 20px;
+    border-radius: 3px;
+}
+footer .copy-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
