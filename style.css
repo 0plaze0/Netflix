@@ -8,6 +8,7 @@
 body{
     background-color: black;
     color: white;
+
 }
 
 /* ------header----- */
@@ -30,10 +31,11 @@ body{
     width: 150px;
     cursor: pointer;
 }
-.header nav button{
+
+nav button{
     border:0;
     outline: 0;
-    background: #db0001;
+    background-color: #db0001;
     color: #fff;
     padding:7px 20px;
     font-size: 12px;
@@ -44,7 +46,7 @@ body{
 .language-btn{
     display: inline-flex;
     align-items: center;
-    background: transparent;
+    background-color: transparent;
     border:1px solid #fff;
     padding: 7px 10px;
 }
@@ -226,4 +228,56 @@ footer .copy-text{
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+/* ----media query for small screen-- */
+@media only screen and (max-width:600px) {
+    .header nav  .logo {/*hae to be specific*/
+      width: 100px;
+    }
+    .header nav button{
+        padding: 5px 10px;
+    }
+    .language-btn{
+        padding:4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top:150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text-col,.img-col{
+        flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .rows:nth-child(2),.rows:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .rows{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 30px;
+    }
+    .accordian .content{
+        font-size: 20px;
+    }
+    .accordian li label{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .label::after{
+        font-size: 22px;
+    }
 }
